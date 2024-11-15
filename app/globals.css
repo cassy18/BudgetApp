@@ -2,8 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-colour: #FFC0CB;
+  --secondary-colour: #FF8096;
+  --accent-colour: #FF4162;
+  --dark-accent-colour: #9e263a;
+}
+
 .textGradient {
-  background: -webkit-linear-gradient(#FF8096, #FFC0CB);
+  background: -webkit-linear-gradient(var(--secondary-colour), var(--primary-colour));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-primary {
+  background-color: var(--primary-colour);
+}
+.text-primary {
+  color: var(--primary-colour);
+}
+.border-primary {
+  border-color: var(--primary-colour);
+}
+
+.text-secondary {
+  color: var(--secondary-colour);
+}
+.bg-secondary {
+  background-color: var(--secondary-colour);
+}
+.border-secondary {
+  border-color: var(--secondary-colour);
+}
+
+.border-accent {
+  border-color: var(--accent-colour);
+}
+.bg-accent {
+  background-color: var(--accent-colour);
+}
+.text-accent {
+  color: var(--accent-colour);
+}
+
+.bg-dark-accent {
+  background-color: var(--dark-accent-colour);
+}
+.text-dark-accent {
+  color: var(--dark-accent-colour);
+}
+.border-dark-accent {
+  border-color: var(--dark-accent-colour);
 }

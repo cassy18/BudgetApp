@@ -25,12 +25,17 @@ export default function RootLayout({ children }) {
   const header = (
     <header className='p-4 sm:p-8 flex items-center justify-between gap-4'>
       <h1 className={'text-lg sm:text-xl textGradient ' + fugaz.className }>Budget</h1>
+      <div className="flex items-center justify-between space-x-2">
+        <a className='text-accent hover:underline' href='/'>Home</a>
+        <a className='text-accent hover:underline' href='/login'>Login</a>
+        <a className='text-accent hover:underline' href='/profile'>Profile</a>
+      </div>
     </header>
   );
 
   const footer = (
-    <footer className='p-4 sm:p-8'>
-hello
+    <footer className='p-4 sm:p-8 grid place-items-center'>
+      <p className={'text-secondary ' + fugaz.className}>Created with 💗</p>
     </footer>
   );
   return (
